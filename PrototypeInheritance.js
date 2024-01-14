@@ -88,5 +88,24 @@ const player=Object.create(captain)
 // const msa=Person('MSA',24)
 // msa.eat('MSA');
 
+function Person(name,age){
+    //imagine
+    //this=Object.create(Person.prototype) //Person.prototype={eat(){}}
+    this.name=name
+    this.age=age 
+
+}
+
+Person.prototype={
+    eat(){
+        console.log(`${this.name} is playing`);
+    }
+}
+
+const msa=new Person('MSA',24)
+console.log(msa);
+console.log(msa.eat);
+
+// console.log(Person.prototype); //eat(){c.log(console.log(`${this.name} is playing`);)}
 
 
