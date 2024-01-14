@@ -61,7 +61,32 @@ const captain={
     country:'Bangladesh'
 }
 const player=Object.create(captain)
+// console.log(player);
+
 //player object captan object theke toiree hoyeche. player child tar parent object captain
 // console.log(player); //{}
 //player ekti empty object. kintu player er prototype er moddhye captain object er sob property pawa zabe.
+
+//JS e prototype er maddhyome property ebong method inherited hoy.OOP language gulute class er maddhoyme property ebong method parent class theke child class e inherited hoy.
+
+
+
+// function Person(name,age){
+//     let person=Object.create(Person.prototype)
+//     person.name=name 
+//     person.age=age
+//     return person
+// }
+//ekahne Person ekti constructor function
+//JS e sob objecti kichui constructor function
+// Person.prototype={
+//     eat(name){
+//         console.log(`${name} person is playing`);
+//        }
+// }
+
+// const msa=Person('MSA',24)
+// msa.eat('MSA');
+
+
 
