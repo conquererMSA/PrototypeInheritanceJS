@@ -22,35 +22,46 @@
 // console.dir(adeel);
 
 //object refference
-const personMethods={
-    eat(){
-        console.log('person is eating');
+// const personMethods={
+//     eat(){
+//         console.log('person is eating');
         
-    },
-    sleep(){
-        console.log('person is sleeping');
+//     },
+//     sleep(){
+//         console.log('person is sleeping');
         
-    },
-    play(){
-        console.log('person is playing');
+//     },
+//     play(){
+//         console.log('person is playing');
         
-    }
+//     }
+// }
+
+// function Person(name, age){
+//     let person={}
+//     person.name=name
+//     person.age=age
+
+//     //reference object for create methods
+//     person.eat=personMethods.eat;
+//     person.sleep=personMethods.sleep;
+//     person.play=personMethods.play
+
+//     return person
+// }
+
+// const msa=Person('MSA',25)
+// console.dir(Person); //f Person(name, age)
+
+// console.dir(msa);// object
+
+const captain={
+    name:'MSA',
+    age:26,
+    country:'Bangladesh'
 }
+const player=Object.create(captain)
+//player object captan object theke toiree hoyeche. player child tar parent object captain
+// console.log(player); //{}
+//player ekti empty object. kintu player er prototype er moddhye captain object er sob property pawa zabe.
 
-function Person(name, age){
-    let person={}
-    person.name=name
-    person.age=age
-
-    //reference object for create methods
-    person.eat=personMethods.eat;
-    person.sleep=personMethods.sleep;
-    person.play=personMethods.play
-
-    return person
-}
-
-const msa=Person('MSA',25)
-console.dir(Person); //f Person(name, age)
-
-console.dir(msa);// object
