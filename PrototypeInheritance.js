@@ -1,0 +1,56 @@
+// //Functional object creation
+// function Person(name,age){
+//     let person={}
+//     person.name=name
+//     person.age=age
+//     person.eat=function(){
+//         console.log(`${this.name} is eating`);
+//         }
+//     person.play=function(){
+//         console.log(`${this.name} is playing`);
+//         }
+//     person.sleep=function(){
+//         console.log(`${this.name} is sleeping`);
+//         }
+//     return person
+// }
+
+// const msa=Person('MSA',25)
+// const adeel=Person('Adeel',24)
+
+// console.dir(msa)
+// console.dir(adeel);
+
+//object refference
+const personMethods={
+    eat(){
+        console.log('person is eating');
+        
+    },
+    sleep(){
+        console.log('person is sleeping');
+        
+    },
+    play(){
+        console.log('person is playing');
+        
+    }
+}
+
+function Person(name, age){
+    let person={}
+    person.name=name
+    person.age=age
+
+    //reference object for create methods
+    person.eat=personMethods.eat;
+    person.sleep=personMethods.sleep;
+    person.play=personMethods.play
+
+    return person
+}
+
+const msa=Person('MSA',25)
+console.dir(Person); //f Person(name, age)
+
+console.dir(msa);// object
